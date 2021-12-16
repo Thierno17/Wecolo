@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="asset/style.css" />
+    <title>Wecolo</title>
+  </head>
+
+  <body>
+    <div class="masque"></div>
+    <nav class="navi navigation navbar navbar-expand-md navbar-light">
+      <div class="container-fluid">
+        <div class="icone navbar-brand m-0 text-center col-2">
+          <a href="index.html">
+            <img
+              src="ressource/Wecolo-Jaune_Bleu (Large).png"
+              alt="logo"
+              width="80"
+              class="d-inline-block align-text-top"
+            />
+          </a>
+        </div>
+        <h3 class="fw-bold col-6 text-center">
+          WeColo, la vitrine de vos séjours
+        </h3>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="col-xs-12">
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link text-nowrap-space" href="">se connecter</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-nowrap-space" href="">s'identifier</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <img src="./ressource/banner.png" class="img-fluid" alt="Responsive image"></img>
+    <div class="contenu container-fluid">
+      <div class="formulaire container mb-3">
+        <img
+          src="../landing-page/ressource/icones/group-8@2x.png"
+          class="exit img-fluid"
+          width="45px"
+        />
+        <form action="">
+          <div class="row col">
+            <div class="col-md-6 mt-3">
+              <label for="Nom">Nom*</label>
+              <input
+                type="text"
+                class="form-control"
+                id="Nom"
+                placeholder="Rentrez votre nom"
+                aria-label="First name"
+                required
+              />
+            </div>
+            <div class="col-md-6 mt-3">
+              <label for="Prenom">Prenom*</label>
+              <input
+                type="text"
+                class="form-control"
+                id="Prenom"
+                placeholder="Rentrez votre prénom"
+                aria-label="Last name"
+                required
+              />
+            </div>
+          </div>
+          <div class="col mt-3">
+            <label for="Fonction">Fonction*</label>
+            <div class="hide">
+              <select class="form-select" id="Fonction" required>
+                <option value="">Sélectionnez une Fonction</option>
+                <option value="1">Maire</option>
+                <option value="2">Organisateur</option>
+                <option value="3">Autre</option>
+              </select>
+            </div>
+          </div>
+          <div class="row col">
+            <div class="col-md-6 mt-3">
+              <label for="Email" class="form-label">Email*</label>
+              <input
+                type="email"
+                class="form-control"
+                id="Email"
+                placeholder="you@gmail.com"
+                required
+              />
+            </div>
+            <div class="col-md-6 mt-3">
+              <label for="Telephone" class="form-label">Téléphone*</label>
+              <input
+                type="tel"
+                class="form-control"
+                id="Telephone"
+                pattern="[0-9]{10}"
+                maxlength="10"
+                placeholder="N° téléphone"
+                required
+              />
+            </div>
+          </div>
+          <div class="col mt-3">
+            <button
+              type="submit"
+              class="btn-valider btn btn-primary d-grid col-5 mx-auto mx-auto"
+            >
+              Valider
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="bloc row p-3 ">
+        <div class="col-lg-6 mt-3 mb-3">
+          <div class="ratio ratio-4x3">
+            <iframe
+              src="../landing-page/ressource/video/V3.mp4"
+              title="video"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <p class="Text text-center">
+            WeColo ? C’est <b>la plateforme</b> pour les organisateurs de
+            séjours !
+          </p>
+          <p class="Text text-center">
+            <b>WeColo</b> vous offre une communication simple et rapide, mais
+            augmente également votre visibilité tout en optimisant la gestion
+            des offres de vos séjours.
+          </p>
+          <p class="Text text-center">
+            Alors ? Qu’attendez-vous pour devenir un partenaire <b>WeColo</b> ?
+          </p>
+
+          <button
+            type="submit"
+            class="
+              btn-rejoindre btn btn-primary
+              d-grid
+              col-5
+              mx-auto mx-auto
+              mt-3
+              mb-5
+            "
+          >
+            Rejoindre
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="pied-de-page">
+      <div class="container px-4">
+        <div class="row gx-5">
+          <div class="col-3 col-md-7 mt-3">
+            <img
+              src="ressource/Wecolo-Jaune_Bleu (Large).png"
+              alt="logo"
+              width="100px"
+              class="d-inline-block align-text-top"
+            />
+          </div>
+          <div class="col-3 col-md-2 mt-3">
+            <a href="">
+            <img
+              src="../landing-page/ressource/icones/group-10.png"
+              class="exit img-fluid"
+              width="50px"
+            />
+          </a>
+          </div>
+          <div class="col-3 col-md-2 mt-3">
+            <a href="">
+            <img
+              src="../landing-page/ressource/icones/group-11.png"
+              class="exit img-fluid"
+              width="50px"
+            />
+          </a>
+          </div>
+          <div class="col-3 col-md-1 mt-3">
+            <p>FAQ</p>
+            <p>Newsletter</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="asset/js/jquery-3.6.0.js"></script>
+    <script src="asset/js/script.js"></script>
+  </body>
+</html>
